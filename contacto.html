@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Fernanda</title>
+<meta name="description" content="Escribile a Fernanda o suscribite al newsletter de aromaterapia y bienestar natural.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Fernanda<small>Aromaterapia &amp; bienestar</small></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="blog.html">Artículos</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section style="padding-top:70px;">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:56px;">
+    <div>
+      <p class="eyebrow">Escribime</p>
+      <h1>Contame qué necesitás.</h1>
+      <p style="font-size:1.05rem;">Consultas sobre productos, dudas de aromaterapia o simplemente para saludar. Respondo yo misma.</p>
+
+      <!-- Formulario estático: usa FormSubmit (gratuito, sin necesidad de cuenta) para recibir los mensajes en fernandaswissjust@gmail.com -->
+      <form action="https://formsubmit.co/fernandaswissjust@gmail.com" method="POST" style="margin-top:28px; display:flex; flex-direction:column; gap:16px; max-width:440px;">
+        <input type="hidden" name="_subject" value="Nueva consulta desde el sitio de Fernanda">
+        <input type="hidden" name="_template" value="table">
+        <label style="font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft);">
+          Nombre
+          <input type="text" name="nombre" required style="width:100%; margin-top:6px; padding:12px 14px; border:1px solid var(--line); border-radius:3px; background:var(--panel); font-family:var(--body); font-size:1rem;">
+        </label>
+        <label style="font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft);">
+          Correo
+          <input type="email" name="email" required style="width:100%; margin-top:6px; padding:12px 14px; border:1px solid var(--line); border-radius:3px; background:var(--panel); font-family:var(--body); font-size:1rem;">
+        </label>
+        <label style="font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-soft);">
+          Mensaje
+          <textarea name="mensaje" rows="5" required style="width:100%; margin-top:6px; padding:12px 14px; border:1px solid var(--line); border-radius:3px; background:var(--panel); font-family:var(--body); font-size:1rem; resize:vertical;"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <div id="newsletter">
+      <p class="eyebrow">Newsletter</p>
+      <h2>Un ritual nuevo cada mes</h2>
+      <p>Sumate para recibir una guía corta de aromaterapia o relajación por correo. Sin spam, cancelás cuando quieras.</p>
+
+      <!-- Reemplazar por el código de embed de Mailchimp / Brevo (ambos con plan gratuito) -->
+      <form action="https://REEMPLAZAR-mailchimp-o-brevo-embed-url" method="POST" style="margin-top:24px; display:flex; gap:10px; flex-wrap:wrap; max-width:440px;">
+        <input type="email" name="EMAIL" required placeholder="tu@correo.com" style="flex:1; min-width:200px; padding:12px 14px; border:1px solid var(--line); border-radius:3px; background:var(--panel); font-family:var(--body); font-size:1rem;">
+        <button type="submit" class="btn btn-honey">Suscribirme</button>
+      </form>
+
+      <div class="divider-leaf"></div>
+
+      <p class="eyebrow" style="margin-top:0;">Redes</p>
+      <div class="btn-row">
+        <a href="https://www.youtube.com/@fernandapaetaliderregionur2818" target="_blank" rel="noopener" class="btn btn-ghost">YouTube</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a>
+        <a href="https://wa.me/541148894147" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" style="margin-top:60px;">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Fernanda — Bienestar Natural</span>
+      <span><a href="index.html">Volver al inicio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
