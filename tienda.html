@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda — Fernanda</title>
+<meta name="description" content="Catálogo de productos naturales Just y guías descargables de aromaterapia y relajación.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Fernanda<small>Aromaterapia &amp; bienestar</small></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="blog.html">Artículos</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="tienda.html" class="active">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section style="padding-top:70px;">
+  <div class="wrap">
+    <p class="eyebrow">Tienda</p>
+    <h1>Lo que uso, lo que enseño.</h1>
+    <p style="font-size:1.1rem; max-width:62ch;">Dos formas de llevarte algo de acá: los productos Just que recomiendo con asesoramiento personal, y guías propias en PDF o video para profundizar por tu cuenta.</p>
+  </div>
+</section>
+
+<!-- CATALOGO JUST -->
+<section id="catalogo" style="padding-top:0;">
+  <div class="wrap">
+    <p class="eyebrow">Catálogo oficial</p>
+    <h2>Productos Just</h2>
+    <p>Acá te cuento un poco de cada línea. Para ver precios actualizados y comprar, cada botón te lleva directo a la tienda oficial de Just Argentina.</p>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="card reveal">
+        <div class="card-icon">🌿</div>
+        <h3>Aromaterapia</h3>
+        <p>Aceites esenciales puros, para difusor y aplicación directa. Los que uso todos los días.</p>
+        <a href="https://www.justargentina.com/tienda/category/detail/2" target="_blank" rel="noopener" class="card-link">Ver en la tienda oficial →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🧴</div>
+        <h3>Bienestar dermo-cosmético</h3>
+        <p>Cremas, geles y línea corporal con base de aceites esenciales naturales.</p>
+        <a href="https://www.justargentina.com/category/detail/e" target="_blank" rel="noopener" class="card-link">Ver en la tienda oficial →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">📋</div>
+        <h3>Catálogo completo</h3>
+        <p>Todas las líneas de producto Just, con precios y promociones vigentes.</p>
+        <a href="https://www.justargentina.com/tienda" target="_blank" rel="noopener" class="card-link">Ver catálogo completo →</a>
+      </div>
+    </div>
+    <p style="margin-top:22px; font-family:var(--mono); font-size:.82rem; color:var(--ink-soft);">
+      * Si tenés tu propio link de consultora (con tu nombre de usuario en la URL de Just), reemplazá estos tres links por el tuyo — así cualquier compra que se genere desde tu sitio queda asociada a vos.
+    </p>
+  </div>
+</section>
+
+<!-- GUIAS PAGAS -->
+<section id="guias" class="band">
+  <div class="wrap">
+    <p class="eyebrow">Contenido premium</p>
+    <h2>Guías y mini-cursos</h2>
+    <p>Contenido de nota de fondo: lo más completo, para comprar una vez y usar siempre.</p>
+
+    <div class="grid grid-2" style="margin-top:32px;">
+      <div class="card reveal">
+        <span class="nota nota-fondo">Fondo · PDF</span>
+        <h3>Aromaterapia por estación del año</h3>
+        <p>36 páginas. Qué aceites acompañan cada estación, combinaciones y cómo armar tu botiquín aromático completo.</p>
+        <div class="price-box">
+          <span class="price">$—</span>
+          <a href="#" class="btn btn-honey">Comprar guía</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="nota nota-fondo">Fondo · Video</span>
+        <h3>Ritual de relajación en 21 días</h3>
+        <p>Un video corto por día, con productos Just y técnicas de respiración guiadas.</p>
+        <div class="price-box">
+          <span class="price">$—</span>
+          <a href="#" class="btn btn-honey">Comprar curso</a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:22px; font-family:var(--mono); font-size:.82rem; color:var(--ink-soft);">
+      * Los botones "Comprar" deben apuntar a tu página de venta (por ejemplo Gumroad, Hotmart o Ko-fi — servicios gratuitos para vender PDFs y cursos sin necesitar servidor propio). Instrucciones en el README.
+    </p>
+  </div>
+</section>
+
+<!-- ESPACIO PUBLICITARIO (opcional) -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Opcional</p>
+    <h2>Espacio publicitario</h2>
+    <p>Si en el futuro sumás Google AdSense, este es un buen lugar para un bloque de anuncios sin interrumpir la lectura. El README explica los requisitos para habilitarlo.</p>
+    <div class="card" style="text-align:center; color:var(--ink-soft); font-family:var(--mono); font-size:.8rem; letter-spacing:.05em;">
+      <!-- Reemplazar por el código de Google AdSense una vez aprobado el sitio -->
+      ESPACIO RESERVADO PARA PUBLICIDAD (AdSense)
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Fernanda — Bienestar Natural</span>
+      <span><a href="index.html">Volver al inicio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
